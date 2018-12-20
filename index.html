@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>东南大学某宿舍</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+    <style>
+        #head{
+            background: linear-gradient(to left, lightskyblue, limegreen);
+            color: white;
+            position: sticky;
+            margin:auto;
+            text-align: center;
+            font-family: 方正姚体;
+        }
+        body
+        {
+            width: 70%;
+            margin:auto;
+            background: whitesmoke;
+        }
+
+        #data{
+            float: bottom;
+
+        }
+    </style>
+</head>
+<body>
+<div id="head">
+    <br/>
+    <h1>东南大学某宿舍</h1><br/>
+    <h3>{{message}}</h3><br/>
+    <button v-on:click="change" style="background: white; border: white">{{butt}}</button>
+    <br/><br/>
+</div>
+<div id="first">
+    <h2 style="color: lightseagreen">本宿舍项目:</h2>
+    <ul style="color: darkturquoise">
+        <li>本网站</li>
+        <li style="color: lightgreen" >待续</li>
+    </ul>
+    <h2 style="color: lightseagreen">枪毙名单:</h2>
+    <p style="color: darkturquoise"> 全员枪毙</p>
+</div>
+<div id="data">
+    <p style="float: end">建于於二零一八年十二月二十日</p>
+</div>
+
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
