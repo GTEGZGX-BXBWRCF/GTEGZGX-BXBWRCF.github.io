@@ -1,6 +1,6 @@
 $(function(e)
 {
-    $("body").fadeIn(2000);
+    $("body").fadeIn("slow");
     var flag = true;
     $("#btn").click(function(e)
     {
