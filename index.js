@@ -1,19 +1,21 @@
-var header = new Vue({
-    el:"#head",
-    data:{
-        message:"一个拥护党的先进集体",
-        butt:"呵呵",
-        flag:true
-    },
-    methods:{
-        change:function(){
-            if (this.flag === true)
-            {this.message = "一个拥护党国的先进集体";
-            this.butt = "保命要紧";}
-            else
-            {  this.message="一个拥护党的先进集体";
-            this.butt= "呵呵";}
-            this.flag = !this.flag;
+$(function(e)
+{
+    var flag = true;
+    $("#btn").click(function(e)
+    {
+        if (flag === true)
+        {
+            $('#message').text("一个拥护党国的先进宿舍");
+            $('#btn').text("算了,保命要紧");
+            $('#head').css('background-image',"url('guoqi.jpeg')");
+            flag = !flag;
         }
-    }
-})
+        else
+            {
+            $('#message').text("一个拥护党的进步宿舍");
+            $('#btn').text("呵呵");
+            $('#head').css('background-image',"linear-gradient(to left, #16628f, #168e63)")
+            flag = !flag;
+        }
+    });
+});

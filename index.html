@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>东南大学某宿舍</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+    <script src="jquery-3.3.1.js"></script>
     <style>
         #head{
-            background: linear-gradient(to left, #16628f, #168e63);
+            background-image: linear-gradient(to left, #16628f, #168e63);
             color: white;
             position: sticky;
             margin:auto;
@@ -27,14 +27,16 @@
         }
     </style>
 </head>
-<body>
+<body id="body">
+
 <div id="head">
     <br/>
     <h1>东南大学某宿舍</h1><br/>
-    <h3>{{message}}</h3><br/>
-    <button v-on:click="change" style="background: white; border: white">{{butt}}</button>
+    <h3 id="message">一个拥护党的进步宿舍</h3><br/>
+    <button id="btn" style="background: white; border: white">呵呵</button>
     <br/><br/>
 </div>
+
 <div id="first">
     <h2 style="color: lightseagreen">本宿舍项目:</h2>
     <ul style="color: darkturquoise">
@@ -48,10 +50,5 @@
     <p style="float: end" align="right">建于於二零一八年十二月二十日</p>
 </div>
 
-
-
-
-
 <script src="index.js"></script>
 </body>
-</html>
